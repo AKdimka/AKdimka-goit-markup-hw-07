@@ -254,7 +254,8 @@ body {
 	font-size: 12px;
 	line-height: 1.16;
 	letter-spacing: 0.01em;
-
+}
+.form-field:not(:first-child) {
 	margin-top: 10px;
 }
 .form-input {
@@ -620,12 +621,12 @@ body {
 }
 .subscribe-box__form {
 	display: flex;
+	margin-top: 20px;
 	flex-direction: row;
 	align-items: baseline;
 }
 .subscribe-box__input {
 	width: 358px;
-	margin-top: 20px;
 	padding: 15px 16px;
 
 	background: inherit;
