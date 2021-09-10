@@ -403,7 +403,7 @@
 
 			<div class="footer-section__subscribe-box subscribe-box">
 				<h2 class="subscribe-box__title">Подпишитесь на рассылку</h2>
-				<form class="subscribe-box__form">
+				<form action="#" class="subscribe-box__form">
 					<input class="subscribe-box__input" type="email" placeholder="E-mail">
 					<button class="subscribe-box__btn btn" type="submit">Подписаться
 						<svg class="subscribe-box__btn-svg" width="24" height="24">
@@ -418,12 +418,12 @@
 	<div class="backdrop is-hidden" data-modal>
 		<div class="backdrop__modal modal">
 			<button type="button" class="modal__close-btn" data-modal-close>
-				<svg width="11" height="11">
+				<svg width="18" height="18">
 					<use href="./images/sprite.svg#cross"></use>
 				</svg>
 			</button>
 			<h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
-			<form action="" class="modal__form form" autocomplete="on" method="GET">
+			<form action="#" class="modal__form form" autocomplete="on" method="GET">
 				<label class="form__field">Имя
 					<input class="form__input" type="text" name="name" required placeholder="Алексей">
 					<svg class="form__input-svg" width="18" height="18">
@@ -447,9 +447,8 @@
 				</label>
 
 				<label class="form__field">Комментарий
-					<textarea class="form__input form__input--comment" name="comment" id="comment" rows="8"
-						placeholder="Введите текст">
-					</textarea>
+					<textarea class="form__input form__input--comment" name="comment" rows="8"
+						placeholder="Введите текст"></textarea>
 				</label>
 
 				<label class="form__policy policy">
