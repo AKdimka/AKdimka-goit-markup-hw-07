@@ -1,0 +1,73 @@
+.workers-section {
+	background: $third-bg;
+	text-align: center;
+}
+.workers-section__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+
+	color: $secondary-text-color;
+}
+.workers-section__list {
+	display: flex;
+	margin-top: 50px;
+}
+.workers {
+}
+.workers__card {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	overflow: hidden;
+	&:not(:first-child) {
+		margin-left: $item-gap;
+	}
+}
+.workers-card__content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	background-color: $bg-color;
+}
+.workers-card__name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+
+	color: $secondary-text-color;
+}
+.workers-card__position {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+
+	margin-top: 10px;
+}
+.workers-card__media {
+	display: flex;
+	margin-top: 16px;
+	justify-content: center;
+}
+
+.card-media__item {
+	&:not(:first-child) {
+		margin-left: 10px;
+	}
+}
+.card-media__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+
+	fill: #afb1b8;
+
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:focus,
+	&:hover {
+		fill: $bg-color;
+		background-color: $brand-color;
+	}
+}
