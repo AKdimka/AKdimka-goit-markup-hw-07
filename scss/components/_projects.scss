@@ -1,18 +1,16 @@
-.projects-section {
+.projects {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: -1 * $item-gap;
 	margin-left: -1 * $item-gap;
 }
-.projects-section__item {
+.projects__item {
 	margin-top: $item-gap;
 	margin-left: $item-gap;
 
 	flex-basis: ($container-width - ($item-gap * 3)) / 3;
 }
-.project-card {
-}
-.project-card__link {
+.project__link {
 	display: block;
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:focus,
@@ -20,11 +18,11 @@
 		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 	}
 }
-.project-card__thumb {
+.project__thumb {
 	position: relative;
 	overflow: hidden;
 }
-.project-card__content {
+.project__content {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 24px;
@@ -34,20 +32,20 @@
 	border-bottom: 1px solid #eeeeee;
 	border-right: 1px solid #eeeeee;
 }
-.project-card__name {
+.project__title {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: $secondary-text-color;
 }
-.project-card__text {
+.project__text {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.9;
 	color: $primery-text-color;
 }
-.project-card__description {
+.project__description {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -62,8 +60,8 @@
 	transform: translateY(101%);
 
 	color: $bg-color;
-	.project-card__link:hover &,
-	.project-card__link:focus & {
+	.project__link:hover &,
+	.project__link:focus & {
 		transform: translateY(0);
 	}
 }

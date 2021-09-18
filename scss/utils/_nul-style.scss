@@ -36,6 +36,14 @@ body {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
+.section__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+
+	color: $secondary-text-color;
+}
 .link {
 	&:hover,
 	&:focus {
@@ -73,12 +81,4 @@ body {
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}
-.section__title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
-
-	color: $secondary-text-color;
 }
